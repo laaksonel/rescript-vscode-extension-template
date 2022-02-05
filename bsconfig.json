@@ -1,0 +1,19 @@
+{
+  "name": "rescript-vscode-extension-template",
+  "version": "0.0.1",
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  },
+  "package-specs": {
+    "module": "commonjs"
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "rescript-vscode",
+    "reason-promise"
+  ],
+  "warnings": {
+    "error" : "+101"
+  }
+}

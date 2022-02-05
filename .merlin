@@ -1,0 +1,12 @@
+####{BSB GENERATED: NO EDIT
+FLG -ppx '/home/late/projects/rescript-vscode-extension-template/node_modules/rescript/linux/bsc.exe -as-ppx '
+S /home/late/projects/rescript-vscode-extension-template/node_modules/rescript/lib/ocaml
+B /home/late/projects/rescript-vscode-extension-template/node_modules/rescript/lib/ocaml
+FLG -w +a-4-9-20-40-41-42-50-61-102
+S /home/late/projects/rescript-vscode-extension-template/node_modules/rescript-vscode/lib/ocaml
+B /home/late/projects/rescript-vscode-extension-template/node_modules/rescript-vscode/lib/ocaml
+S /home/late/projects/rescript-vscode-extension-template/node_modules/reason-promise/lib/ocaml
+B /home/late/projects/rescript-vscode-extension-template/node_modules/reason-promise/lib/ocaml
+S src
+B lib/bs/src
+####BSB GENERATED: NO EDIT}

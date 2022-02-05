@@ -1,40 +1,42 @@
 {
   "name": "rescript-vscode-extension-template",
-	"displayName": "rescript-vscode-extension-template",
-	"description": "VSCode Extension project template for Rescript language",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.64.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-        "onCommand:rescript-vscode-extension-template.helloWorld"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"commands": [{
-            "command": "rescript-vscode-extension-template.helloWorld",
-            "title": "Hello World"
-
-		}]
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
-	},
-	"devDependencies": {
-        "@types/vscode": "^1.64.0",
-        "@types/glob": "^7.1.4",
-        "@types/mocha": "^9.0.0",
-        "@types/node": "14.x",
-        "eslint": "^7.32.0",
-        "glob": "^7.1.7",
-        "mocha": "^9.1.1",
-        "typescript": "^4.4.3",
-        "@vscode/test-electron": "^1.6.2"
-    }
-
+  "displayName": "rescript-vscode-extension-template",
+  "description": "VSCode Extension project template for Rescript language",
+  "version": "0.0.1",
+  "publisher": "Lauri Laaksonen",
+  "license": "MIT",
+  "repository": {
+    "url": "https://www.github.com:laaksonenl/rescript-vscode-extension-template"
+  },
+  "engines": {
+    "vscode": "^1.63.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:rescript-vscode-extension-template.helloWorld"
+  ],
+  "main": "./lib/js/src/extension.bs.js",
+  "contributes": {
+    "commands": [{
+      "command": "rescript-vscode-extension-template.helloWorld",
+      "title": "Hello World"
+    }]
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "scripts": {
+    "build": "rescript",
+    "clean": "rescript clean -with-deps",
+    "start": "rescript build -w"
+  },
+  "dependencies": {
+    "reason-promise": "^1.1.5",
+    "rescript": "*"
+  },
+  "devDependencies": {
+    "rescript-vscode": "github:banacorn/rescript-vscode"
+  }
 }
