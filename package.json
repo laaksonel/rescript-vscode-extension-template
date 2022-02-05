@@ -6,7 +6,7 @@
   "publisher": "Lauri Laaksonen",
   "license": "MIT",
   "repository": {
-    "url": "https://www.github.com:laaksonenl/rescript-vscode-extension-template"
+    "url": "https://www.github.com:laaksonel/rescript-vscode-extension-template"
   },
   "engines": {
     "vscode": "^1.63.0"
